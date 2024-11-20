@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="static/images/myimg.jpeg" alt="プロフィール写真" class="profile-photo">
+            <h1>田中愛万音 Amane Tanaka</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">経歴</a></li>
+                    <li><a href="#skills">スキル</a></li>
+                    <li>
+                        <a href="#projects">プロジェクト</a>
+                        <ul class="dropdown">
+                            <li><a href="#project1">大規模木構造の可視化</a></li>
+                            <li><a href="#project2">SNSデータの視覚的分析</a></li>
+                            <li><a href="#project3">LLMを用いたソフトウェア開発</a></li>
+                            <li><a href="#project4">データ利活用基盤の提案</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">連絡先</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--  元に戻す！！！
+            <section id="about">
+                <h2>経歴</h2>
+                <p>2020年 3月 私立豊島岡女子学園中高卒業</p>
+                <p>2023年 2月~ 脇田研究室所属</p>
+                <p>2024年 3月 東京工業大学 情報理工学院数理計算科学系卒業</p>
+                <p>2024年 4月~ 東京工業大学(大学院) 情報理工学院数理計算科学系数理計算科学コース在学中</p>
+            </section>
+            <section id="skills">
+                <h2>特技・スキル</h2>
+                <ul>
+                    <li><b>作文</b>：学部3年時必修科目教養卒論にて学生優秀論文賞を受賞</li>
+                    <li><b>データ分析・情報可視化</b>：主にPython (pandas, Plotlyなど) を利用した分析を研究室で約3年触れている</li>
+                    <li><b>ビッグデータ処理</b>：Flask等を用いて計算速度を高め、操作性をあげることを努めた</li>
+                    <li><b>UI/UX設計</b>：学部研究から現在にかけて主にD3.jsを使用し、設計・実装</li>
+                    <li><b>基本情報技術者</b>：2022年に取得</li>
+                </ul>
+            </section>
+        -->
+        <section id="about">
+            <div class="about-container">
+                <!-- 経歴セクション -->
+                <div class="history">
+                    <h2>経歴</h2>
+                    <p>2020年 3月 私立豊島岡女子学園中高卒業</p>
+                    <p>2023年 2月~ 脇田研究室所属</p>
+                    <p>2024年 3月 東京工業大学 情報理工学院数理計算科学系卒業</p>
+                    <p>2024年 4月~ 東京工業大学(大学院) 情報理工学院数理計算科学系数理計算科学コース在学中</p>
+                </div>
+        
+                <!-- スキルセクション -->
+                <div class="skills">
+                    <h2>スキル</h2>
+                    <p><b>作文</b>：学部3年時必修科目教養卒論にて学生優秀論文賞を受賞</p>
+                    <p><b>データ分析・情報可視化</b>：主にPython (pandas, Plotlyなど) を利用した分析を研究室で約3年触れている</p>
+                    <p><b>ビッグデータ処理</b>：Flask等を用いて計算速度を高め、操作性をあげることを努めた</p>
+                    <p><b>UI/UX設計</b>：学部研究から現在にかけて主にD3.jsを使用し、設計・実装</p>
+                    <p><b>基本情報技術者</b>：2022年に取得</p>
+                </div>
+            </div>
+        </section>        
+            <section id="projects">
+                <h2>プロジェクト</h2>
+                <div class="project-row">
+                    <article id="project1">
+                        <h3>大規模木構造の可視化</h3>
+                        <p>大規模で複雑な木構造データを効率的かつ分かりやすく可視化する新しい手法の提案。200万超
+                            の系統樹データを用い、サンバースト図を基盤としながら、ズーム、色の調整、検索機能などを組み合わせるこ
+                            とで、情報の見やすさと操作性を向上させた。設計をする際には、主に視覚に関連する人間の認知機能を考慮した。</p>
+                        <p>技術: D3.js, Flask, CIELab(色)</p>
+                        <a href="https://github.com/tnk0512/ToL07/tree/for-research">GitHubリポジトリ</a>
+                        <div class="image-gallery">
+                            <figure>
+                                <img src="static/images/tol_zentai.jpg" alt="ToL1">
+                                <figcaption>図1: クリック前のデフォルト画面（検索機能でパスを強調）</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="static/images/tol_insecta.jpg" alt="ToL2">
+                                <figcaption>図2: "Insecta"をクリック（灰色のバーで自由に回転可能）</figcaption>
+                            </figure>         
+                        </div>
+                    </article>
+                    <article id="project2">
+                        <h3>SNSデータの視覚的分析</h3>
+                        <p>
+                            感染症の拡大シミュレーションデータを分析し、感染源とメカニズムを特定する課題。Pythonを使用し、Pandasでデータ処理、Plotlyで時空間分析とインタラクティブな可視化を実施。TF-IDFを利用した解析を行った結果、都市内の川沿いで感染が広がっていることが明らかになった。
+                        </p>
+                        <div class="image-gallery">
+                            <figure>
+                                <img src="static/images/microblog.jpg" alt="分析画像1">
+                                <figcaption>図3: 分析対象のSNSの投稿データ（架空）</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="static/images/mapplot.png" alt="分析画像2">
+                                <figcaption>図4: 地理的分析（投稿を地図上にプロット）</figcaption>
+                            </figure>         
+                        </div>
+                    </article>
+                </div>
+                <!--
+                <article id="project1">
+                    <h3>大規模木構造の可視化</h3>
+                    <p>大規模で複雑な木構造データを効率的かつ分かりやすく可視化する新しい手法の提案。200万超
+                        の系統樹データを用い、サンバースト図を基盤としながら、ズーム、色の調整、検索機能などを組み合わせるこ
+                        とで、情報の見やすさと操作性を向上させた。設計をする際には、主に視覚に関連する人間の認知機能を考慮した。</p>
+                    <p>技術: D3.js, Flask, CIELab(色)</p>
+                    <a href="https://github.com/tnk0512/ToL07/tree/for-research">GitHubリポジトリ</a>
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="static/images/tol_zentai.jpg" alt="ToL1">
+                            <figcaption>図1: クリック前のデフォルト画面（検索機能でパスを強調）</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="static/images/tol_insecta.jpg" alt="ToL2">
+                            <figcaption>図2: "Insecta"をクリック（灰色のバーで自由に回転可能）</figcaption>
+                        </figure>         
+                    </div>
+                </article>
+                <article id="project2">
+                    <h3>SNSデータの視覚的分析</h3>
+                    <p>
+                        感染症の拡大シミュレーションデータを分析し、感染源とメカニズムを特定する課題。Pythonを使用し、Pandasでデータ処理、Plotlyで時空間分析とインタラクティブな可視化を実施。TF-IDFを利用した解析を行った結果、都市内の川沿いで感染が広がっていることが明らかになった。
+                    </p>
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="static/images/microblog.jpg" alt="分析画像1">
+                            <figcaption>図3: 分析対象のSNSの投稿データ（架空）</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="static/images/mapplot.png" alt="分析画像2">
+                            <figcaption>図4: 地理的分析（投稿を地図上にプロット）</figcaption>
+                        </figure>         
+                    </div>
+                </article>
+            -->
+                <div class="project-row">
+                    <article id="project3">
+                        <h3>インターンシップ1：LLMを用いたソフトウェア開発におけるトレーサビリティ確保</h3>
+                        <p>
+                            LLMを活用し、ソフトウェア開発におけるトレーサビリティを確保する仕組みを設計した。独自の取り組みとして、要件と設計書の関係性をノードリンク図で可視化し、クラスターの発見や影響分析を支援した。
+                        </p>
+                    </article>
+                
+                    <article id="project4">
+                        <h3>インターンシップ2：データ利活用基盤の提案活動</h3>
+                        <p>
+                            地方銀行向けにデータ利活用基盤を提案するプロジェクトに参加した。選定した銀行の分析結果をグラフ化し、提案資料の説得力を高めるために色使いや配置を工夫した。
+                        </p>
+                    </article>
+                </div>
+                <!--
+                <article id="project3">
+                    <h3>インターンシップ1：LLMを用いたソフトウェア開発におけるトレーサビリティ確保</h3>
+                    <p>
+                        LLMを活用し、ソフトウェア開発におけるトレーサビリティを確保する仕組みを設計した。独自の取り組みとして、要件と設計書の関係性をノードリンク図で可視化し、クラスターの発見や影響分析を支援した。
+                    </p>
+                </article>
+            
+                <article id="project4">
+                    <h3>インターンシップ2：データ利活用基盤の提案活動</h3>
+                    <p>
+                        地方銀行向けにデータ利活用基盤を提案するプロジェクトに参加した。選定した銀行の分析結果をグラフ化し、提案資料の説得力を高めるために色使いや配置を工夫した。
+                    </p>
+                </article>
+            -->
+            </section>
+            <section id="contact">
+                <h2>連絡先</h2>
+                <p>Email: tanaka.a.au@m.titech.ac.jp</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 ポートフォリオ</p>
+        </footer>
+    </div>
+</body>
+</html>

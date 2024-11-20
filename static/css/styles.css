@@ -1,0 +1,186 @@
+/* ページ全体の固定幅 */
+.container {
+    width: 1500px; /* 固定幅を指定 */
+    margin: 0 auto; /* ページ中央に配置 */
+    background-color: #fff; /* 背景色（任意） */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加（オプション） */
+    padding: 20px; /* 余白を追加（オプション） */
+}
+
+/* ページの背景を設定（固定幅の効果を引き立てるため） */
+body {
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 24px; /* ページ全体の文字サイズを大きく */
+    line-height: 1.8; /* 読みやすさのために行間を調整 */
+}
+
+header {
+    position: relative;
+    background: #001f3f;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* プロフィール写真 */
+.profile-photo {
+    position: absolute;
+    top: 170px; /* 上からの距離 */
+    right: 20px; /* 右からの距離 */
+    width: 280px; /* 画像の幅 */
+    height: auto; /* アスペクト比を保持 */
+    /*border-radius: 90%; /* 丸くする */
+    border: 2px solid #fff; /* 白い枠線 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 影を追加 */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* セクションの見出し */
+.history h2, .skills h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* リストスタイル */
+.history ul, .skills ul {
+    padding: 0;
+    list-style: none;
+}
+
+.history li, .skills li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ナビゲーションメニュー */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li:hover > a {
+    background-color: #555; /* ホバー時の背景色 */
+}
+
+/* ドロップダウンメニュー */
+nav ul .dropdown {
+    position: absolute;
+    top: 100%; /* 親メニューの下に配置 */
+    left: 0;
+    display: none; /* 初期状態では非表示 */
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul .dropdown li {
+    margin: 0;
+}
+
+nav ul .dropdown li a {
+    color: #333; /* ドロップダウン内の文字色 */
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul .dropdown li a:hover {
+    background-color: #f4f4f9; /* ドロップダウンのホバー背景 */
+}
+
+/* ドロップダウン表示設定 */
+nav ul li:hover .dropdown {
+    display: block; /* ホバー時に表示 */
+}
+
+/* プロジェクト全体 */
+#projects {
+    padding: 20px;
+}
+
+/* プロジェクトセクションのスタイル */
+article {
+    margin: 20px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px; /* 画像間のスペース */
+    margin-top: 10px;
+    flex-wrap: wrap; /* 画面幅が狭い場合は折り返し */
+}
+
+.image-gallery figure {
+    width: 48%; /* 横に2枚並べるための幅 */
+    margin: 0;
+    text-align: center; /* 注釈を中央揃え */
+}
+
+.image-gallery img {
+    width: 100%; /* 画像を親要素に合わせる */
+    border: 1px solid #ddd; /* 枠線を追加 */
+    border-radius: 5px; /* 角を丸める */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.image-gallery figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #555; /* 注釈の文字色を薄めに */
+}
+/* Project1の画像スタイル */
+#project1 img {
+    width: 90%; /* 画像を少し小さく */
+    height: auto; /* アスペクト比を保持 */
+    display: block;
+    margin: 0 auto; /* 中央揃え */
+    border-radius: 5px; /* 角を丸める（必要に応じて） */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
