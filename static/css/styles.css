@@ -30,10 +30,18 @@ header {
     position: absolute;
     top: 120px; /* 上からの距離 */
     right: 20px; /* 右からの距離 */
-    width: 120px; /* 画像の幅 */
+    width: 140px; /* 画像の幅 */
     height: auto; /* アスペクト比を保持 */
     /*border-radius: 90%; /* 丸くする */
-    border: 2px solid #fff; /* 白い枠線 */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 影を追加 */
+}
+.hobby-camera {
+    position: absolute;
+    top: 600px; /* 上からの距離 */
+    right: 5px; /* 右からの距離 */
+    width: 200px; /* 画像の幅 */
+    height: auto; /* アスペクト比を保持 */
+    /*border-radius: 90%; /* 丸くする */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 影を追加 */
 }
 
@@ -43,10 +51,10 @@ header h1 {
 }
 
 /* セクションの見出し */
-.history h2, .skills h2 {
+.history h2, .skills h2, .hobby h2{
     margin-top: 0;
     font-size: 1rem;
-    color: #333;
+    color: #002e5b;
 }
 
 /* リストスタイル */
