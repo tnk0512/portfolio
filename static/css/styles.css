@@ -116,6 +116,7 @@ nav ul .dropdown {
     position: absolute;
     top: 100%; /* 親メニューの下に配置 */
     left: 0;
+    width:100%;
     display: none; /* 初期状態では非表示 */
     background-color: #fff;
     list-style: none;
@@ -123,6 +124,7 @@ nav ul .dropdown {
     margin: 0;
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.7rem;
 }
 
 nav ul .dropdown li {
@@ -134,6 +136,7 @@ nav ul .dropdown li a {
     padding: 10px 15px;
     text-decoration: none;
     display: block;
+    font-size: 0.7rem;
 }
 
 nav ul .dropdown li a:hover {
